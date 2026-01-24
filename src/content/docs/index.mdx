@@ -1,0 +1,102 @@
+---
+title: AssemblyScript Dökümantasyonu
+description: TypeScript benzeri sözdizimi ile WebAssembly geliştirmeyi öğrenin. Yüksek performanslı web uygulamaları için kapsamlı rehber.
+template: splash
+hero:
+  tagline: WebAssembly Geliştirmenin En Hızlı Yolu
+  image:
+    file: ../../assets/logo.svg
+  actions:
+    - text: Başlarken
+      link: /assemblyscript/modul-0-giris-ve-hazirlik/
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      variant: primary
+    - text: Modüller
+      link: /assemblyscript/modul-1-temel-sozdizimi-ve-turler/
+      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## AssemblyScript Nedir?
+
+AssemblyScript, TypeScript'e benzer bir sözdizimi kullanan ve doğrudan WebAssembly'e derlenen bir programlama dilidir. JavaScript'in performans gerektiren işlemlerinde native hıza ulaşmanızı sağlar.
+
+## Neden AssemblyScript?
+
+<CardGrid stagger>
+	<Card title="⚡ Yüksek Performans" icon="<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'/></svg>">
+		WebAssembly, tarayıcıda neredeyse native performans sunar. Görüntü işleme, oyun fizikleri, kriptografi gibi CPU yoğun işlemlerde JavaScript'ten 10-100x daha hızlı olabilir.
+	</Card>
+	<Card title="📘 TypeScript Benzeri" icon="<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z'/></svg>">
+		Typescript sözdizimine aşina iseniz, AssemblyScript öğrenmek çok kolay. Statik tip sistemi, sınıflar, fonksiyonlar ve daha fazlası aynı mantıkla çalışır.
+	</Card>
+	<Card title="📦 Küçük Boyut" icon="<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z'/><polyline points='3.27 6.96 12 12.01 20.73 6.96'/><line x1='12' y1='22.08' x2='12' y2='12'/></svg>">
+		WebAssembly modülleri çok küçük boyutlardadır. Hızlı indirme ve verimli bellek kullanımı sayesinde mobil cihazlarda bile mükemmel performans sunar.
+	</Card>
+	<Card title="🌐 Web Standartları" icon="<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='10'/><line x1='2' y1='12' x2='22' y2='12'/><path d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'/></svg>">
+		Tüm modern tarayıcılarda ve Node.js'te çalışır. Platform bağımsız geliştirme yapabilir, yazdığınız kod her yerde aynı performansı gösterir.
+	</Card>
+</CardGrid>
+
+## Öğrenme Yolculuğu
+
+AssemblyScript dökümantasyonu 10 modülden oluşan kapsamlı bir eğitim programı sunar:
+
+### Temel Modüller (0-3)
+- **Modül 0:** Giriş ve Hazırlık - WebAssembly temelleri ve ortam kurulumu
+- **Modül 1:** Temel Sözdizimi ve Türler - Tür sistemi, değişkenler, operatörler
+- **Modül 2:** Fonksiyonlar ve Kontrol Yapıları - Recursive fonksiyonlar, generic'ler, algoritmalar
+- **Modül 3:** Nesne Yönelikli Programlama - Sınıflar, kalıtım, interface'ler
+
+### İleri Seviye Modüller (4-6)
+- **Modül 4:** Standart Kütüphane - Array, String, Map, Math, TypedArray
+- **Modül 5:** WebAssembly Entegrasyonu - JavaScript ile iletişim, memory yönetimi
+- **Modül 6:** İleri Seviye Özellikler - SIMD, atomics, operatör overloading
+
+### Uzmanlık Modülleri (7-10)
+- **Modül 7:** Derleyici Kullanımı - CLI seçenekleri, yapılandırma, transform API
+- **Modül 8:** Portability ve Best Practices - Taşınabilir kod yazma ve optimizasyon
+- **Modül 9:** Pratik Projeler - Gerçek dünya örnekleri ve use case'ler
+- **Modül 10:** Ekosistem ve Kaynaklar - Topluluk paketleri ve ileri okuma
+
+## Kullanım Alanları
+
+```typescript
+// Görüntü İşleme
+export function griyeCevir(pixels: Uint8Array): void {
+  for (let i = 0; i < pixels.length; i += 4) {
+    let gri: f32 = pixels[i] * 0.299 + pixels[i + 1] * 0.587 + pixels[i + 2] * 0.114;
+    pixels[i] = pixels[i + 1] = pixels[i + 2] = gri;
+  }
+}
+
+// Kriptografi
+export function crc32(data: Uint8Array): u32 {
+  let crc: u32 = 0xFFFFFFFF;
+  for (let i = 0; i < data.length; i++) {
+    crc ^= u32(data[i]);
+    for (let j = 0; j < 8; j++) {
+      crc = (crc >>> 1) ^ (0xEDB88320 & -(crc & 1));
+    }
+  }
+  return ~crc;
+}
+```
+
+## Başlayın
+
+İlk adımı atmak ve geliştirme ortamınızı hazırlamak için başlangıç rehberini inceleyin.
+
+<CardGrid>
+	<Card title="🚀 Hızlı Başlangıç" icon="<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M4.5 16.5c-1.5 1.26-2 5-2 5s3.5-3.5 5-5c.74-.74 2-2 2-2s-1.26-1.26-2-2-5-3.5-5-5 5 3.74 2 5ZM12 15l-3-3M22 2l-10 10M12 8l-3-3M2 22l10-10'/></svg>">
+		5 dakika içinde ilk AssemblyScript projenizi oluşturun ve çalıştırın.
+	</Card>
+	<Card title="📖 Temel Kavramılar" icon="<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/><path d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/></svg>">
+		Tür sistemi, değişkenler ve kontrol yapıları ile AssemblyScript temellerini öğrenin.
+	</Card>
+	<Card title="💻 Örnek Projeler" icon="<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>">
+		Gerçek dünya örnekleri ile öğrendiklerinizi pekiştirin.
+	</Card>
+</CardGrid>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007ACC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004482;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wasm-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#654FF0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9B7EDE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="180" fill="url(#bg-gradient)"/>
+
+  <!-- WebAssembly-style hexagon -->
+  <path d="M200 60 L320 130 L320 270 L200 340 L80 270 L80 130 Z"
+        fill="url(#wasm-gradient)"
+        opacity="0.3"/>
+
+  <!-- AS letters -->
+  <text x="200" y="240"
+        font-family="Arial, sans-serif"
+        font-size="120"
+        font-weight="bold"
+        text-anchor="middle"
+        fill="white">AS</text>
+
+  <!-- Decorative brackets -->
+  <text x="200" y="290"
+        font-family="monospace"
+        font-size="40"
+        text-anchor="middle"
+        fill="white"
+        opacity="0.8">{ }</text>
+
+  <!-- Small Wasm label -->
+  <text x="200" y="330"
+        font-family="Arial, sans-serif"
+        font-size="24"
+        font-weight="bold"
+        text-anchor="middle"
+        fill="white"
+        opacity="0.9">WASM</text>
+</svg>
