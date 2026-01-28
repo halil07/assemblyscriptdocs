@@ -6,7 +6,7 @@ import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://assemblyscript.dev',
+  site: 'https://assemblyscript.halil07.dev',
 
   integrations: [
       starlight({
@@ -33,13 +33,13 @@ export default defineConfig({
               {
                   icon: 'github',
                   label: 'GitHub',
-                  href: 'https://github.com/assemblyscript/assemblyscript',
+                  href: 'https://github.com/halil07/assemblyscriptdocs',
               },
           ],
 
           // Edit butonu
           editLink: {
-              baseUrl: 'https://github.com/assemblyscript/assemblyscript',
+              baseUrl: 'https://github.com/halil07/assemblyscriptdocs',
           },
       }),
 	],
